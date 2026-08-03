@@ -35,8 +35,9 @@ export NVM_DIR="$HOME/.nvm"
 ########################################
 # ANGULAR CLI AUTOCOMPLETE
 ########################################
-source <(ng completion script)
-
+if command -v ng >/dev/null 2>&1; then
+    source <(ng completion script)
+fi
 ########################################
 # OH MY POSH (tema unicorn)
 ########################################

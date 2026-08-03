@@ -60,7 +60,7 @@ install_debian() {
         echo
         echo "==> Instalando Oh My Posh..."
 
-        curl -s https://ohmyposh.dev/install.sh | bash -s
+        curl -s https://ohmyposh.dev/install.sh | sudo bash -s -- -d /usr/local/bin
 
     fi
 
