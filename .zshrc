@@ -40,7 +40,16 @@ source <(ng completion script)
 ########################################
 # OH MY POSH (tema unicorn)
 ########################################
-eval "$(oh-my-posh init zsh --config //Users/andreduarte/myrc/oh-my-posh-duarch.json)"
+
+if command -v oh-my-posh >/dev/null 2>&1; then
+  OMP_CONFIG="$HOME/dev/myrc/oh-my-posh-duarch.json"
+
+  if [ -f "$OMP_CONFIG" ]; then
+    eval "$(oh-my-posh init zsh --config "$OMP_CONFIG")"
+    fi
+fi
+
+
 
 ########################################
 # ALIASES ÚTEIS
