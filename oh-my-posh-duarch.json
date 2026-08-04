@@ -90,6 +90,20 @@
           "type": "time"
         },
         {
+           "type": "owm",
+           "style": "powerline",
+           "powerline_symbol": "",
+           "foreground": "#ffffff",
+           "background": "#83769C",
+           "template": " {{.Weather}} ({{.Temperature}}{{.UnitIcon}}) ",
+           "options": {
+             "api_key": "e1fbea3aaf65ee0ded845dcb203335ee",
+             "location": "BRASILIA,BR",
+             "units": "metric",
+             "http_timeout": 2000
+           }
+        },
+        {
           "background": "#83769c",
           "foreground": "#ffffff",
           "properties": {
@@ -98,8 +112,12 @@
           "style": "diamond",
           "template": " \ueba2 {{ .FormattedMs }}\u2800",
           "trailing_diamond": "\ue0b4",
-          "type": "executiontime"
+          "type": "executiontime",
+          "options": {
+            "threshold": 500
+          }
         }
+
       ],
       "type": "prompt"
     },
