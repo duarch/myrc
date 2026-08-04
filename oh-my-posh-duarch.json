@@ -100,11 +100,11 @@
              "api_key": "e1fbea3aaf65ee0ded845dcb203335ee",
              "location": "BRASILIA,BR",
              "units": "metric",
-             "http_timeout": 2000
+             "http_timeout": 1000
            }
         },
         {
-          "background": "#83769c",
+          "background": "#5e11ee",
           "foreground": "#ffffff",
           "properties": {
             "always_enabled": true
@@ -114,7 +114,7 @@
           "trailing_diamond": "\ue0b4",
           "type": "executiontime",
           "options": {
-            "threshold": 500
+            "threshold": 900
           }
         }
 
@@ -143,5 +143,5 @@
   ],
   "console_title_template": "{{.UserName}}@{{.HostName}} in {{ .PWD }}",
   "final_space": true,
-  "version": 3
+  "version": 4
 }
