@@ -1,4 +1,17 @@
 ########################################
+# VARIÁVEIS PRIVADAS
+########################################
+
+if [ -f "$HOME/dev/myrc/secrets.env" ]; then
+    set -a
+    source "$HOME/dev/myrc/secrets.env"
+    set +a
+else
+    echo "⚠️  Arquivo ~/dev/myrc/secrets.env não encontrado."
+    echo "   Copie secrets.example para secrets.env e preencha suas chaves."
+fi
+
+########################################
 # HISTÓRICO
 ########################################
 HISTFILE=~/.zsh_history

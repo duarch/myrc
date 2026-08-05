@@ -40,20 +40,20 @@
           "type": "path"
         },
         {
-            "type": "angular",
-            "style": "powerline",
-            "powerline_symbol": "",
-            "foreground": "#000000",
-            "background": "#1976d2",
-            "template": "  {{ .Full }} "
+          "type": "angular",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#000000",
+          "background": "#1976d2",
+          "template": "  {{ .Full }} "
         },
         {
-        "type": "go",
-        "style": "powerline",
-        "powerline_symbol": "",
-        "foreground": "#ffffff",
-        "background": "#7FD5EA",
-        "template": "  {{ .Full }} "
+          "type": "go",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#7FD5EA",
+          "template": "  {{ .Full }} "
         },
         {
           "type": "node",
@@ -90,18 +90,18 @@
           "type": "time"
         },
         {
-           "type": "owm",
-           "style": "powerline",
-           "powerline_symbol": "",
-           "foreground": "#ffffff",
-           "background": "#83769C",
-           "template": " {{.Weather}} ({{.Temperature}}{{.UnitIcon}}) ",
-           "options": {
-             "api_key": "e1fbea3aaf65ee0ded845dcb203335ee",
-             "location": "BRASILIA,BR",
-             "units": "metric",
-             "http_timeout": 1000
-           }
+          "type": "owm",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "#ffffff",
+          "background": "#83769C",
+          "template": " {{.Weather}} ({{.Temperature}}{{.UnitIcon}}) ",
+          "options": {
+            "api_key": "{{ .Env.OWM_API_KEY }}",
+            "location": "BRASILIA,BR",
+            "units": "metric",
+            "http_timeout": 2000
+          }
         },
         {
           "background": "#5e11ee",
